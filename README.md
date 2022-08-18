@@ -1,2 +1,2 @@
 # SignInScreen
-![](https://github.com/erdemsaray/flutter_ui_design/blob/master/screenImages/signInPage.png)
+![](https://github.com/erdemsaray/flutter_ui_design/blob/master/screenImages/signInPage.png =250x)
