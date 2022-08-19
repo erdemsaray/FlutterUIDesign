@@ -1,2 +1,2 @@
 # SignInScreen
-![](https://media.giphy.com/media/rzNMHsCBYbxH9hAMjR/giphy.gif)
+![](https://github.com/erdemsaray/flutter_ui_design/blob/master/screenImages/signInPage.png)
