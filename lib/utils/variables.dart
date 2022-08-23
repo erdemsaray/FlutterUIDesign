@@ -15,7 +15,8 @@ class StringItems {
 }
 
 class ImageItems {
-  static Image img1 = Image.asset("");
+  static AssetImage backgroundImage = const AssetImage('assets/background.png');
+  static AssetImage creditcardImage = const AssetImage('assets/creditcard.png');
 }
 
 class FontItems {
