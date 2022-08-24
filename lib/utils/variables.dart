@@ -6,8 +6,9 @@ class ColorItems {
   static const Color facebookButtonColor = Color.fromARGB(255, 74, 97, 168);
   static const Color googleButtonColor = Color.fromARGB(255, 83, 160, 244);
   static const Color generalTurquaseColor = Color.fromARGB(156, 7, 214, 207);
+  static const Color greyBackgroundColor = Color.fromARGB(255, 25, 25, 25);
 
-  //songelisme.com kırmızısı.
+  
 }
 
 class StringItems {
@@ -17,6 +18,7 @@ class StringItems {
 class ImageItems {
   static AssetImage backgroundImage = const AssetImage('assets/background.png');
   static AssetImage creditcardImage = const AssetImage('assets/creditcard.png');
+  static AssetImage profileImage = const AssetImage('assets/profilepicture.png');
 }
 
 class FontItems {
