@@ -1,4 +1,5 @@
 import 'package:eats_app/utils/variables.dart';
+import 'package:eats_app/widgets/elevated_button_widget.dart';
 import 'package:flutter/material.dart';
 
 class AccountPage extends StatefulWidget {
@@ -17,7 +18,10 @@ class _AccountPageState extends State<AccountPage> {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.transparent,
-          leading: const Icon(Icons.arrow_back_ios_new_outlined),
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back_ios_new_outlined),
+            onPressed: () {},
+          ),
           actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.menu_rounded))],
         ),
         body: Container(
@@ -26,7 +30,7 @@ class _AccountPageState extends State<AccountPage> {
             image: DecorationImage(image: ImageItems.backgroundImage, fit: BoxFit.cover),
           ),
           child: Padding(
-            padding: const EdgeInsets.only(right: 20, left: 20, top: 40),
+            padding: const EdgeInsets.only(right: 20, left: 20, top: 50),
             child: SingleChildScrollView(
               child: Column(
                 children: [
@@ -142,6 +146,14 @@ class _AccountPageState extends State<AccountPage> {
                       ),
                     ),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    child: ElevatedButtonWidget(
+                        buttonTitle: "Logout",
+                        buttonColor: ColorItems.generalTurquaseColor,
+                        buttonTextStyle: FontItems.boldTextInter20,
+                        buttonMetod: accountInfo),
+                  ),
                 ],
               ),
             ),
@@ -154,10 +166,10 @@ class _AccountPageState extends State<AccountPage> {
           currentIndex: 4,
           items: [
             const BottomNavigationBarItem(icon: Icon(Icons.shopping_basket_outlined), label: 'Menu2'),
-            const BottomNavigationBarItem(icon: Icon(Icons.square), label: 'Menu2'),
+            const BottomNavigationBarItem(icon: Icon(Icons.account_balance_sharp), label: 'Menu2'),
             const BottomNavigationBarItem(icon: Icon(Icons.event_available_sharp), label: 'Menu2'),
-            const BottomNavigationBarItem(icon: Icon(Icons.abc), label: 'Menu2'),
-            const BottomNavigationBarItem(icon: Icon(Icons.abc), label: 'Menu2'),
+            const BottomNavigationBarItem(icon: Icon(Icons.calendar_month), label: 'Menu2'),
+            const BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: 'Profile'),
           ],
         ));
   }
@@ -178,6 +190,7 @@ class rowWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      splashColor: Colors.amber,
       onTap: widgetFunction,
       child: Row(
         children: [
