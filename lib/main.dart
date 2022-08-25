@@ -1,5 +1,6 @@
 import 'package:eats_app/screens/account_page.dart';
 import 'package:eats_app/screens/add_new_card_page.dart';
+import 'package:eats_app/screens/menu_page.dart';
 import 'package:eats_app/screens/sign_in_page.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
-      home: AccountPage(),
+      home: MenuPage(),
     );
   }
 }
